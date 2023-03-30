@@ -15,11 +15,11 @@ See databricks definition on Data Vault:
 
 In general, a Data Vault model has three types of entities:
 
-Hubs — A Hub represents a core business entity, like customers, products, orders, etc. Analysts will use the natural/business keys to get information about a Hub. The primary key of Hub tables is usually derived by a combination of business concept ID, load date, and other metadata information.
+**Hubs** — A Hub represents a core business entity, like customers, products, orders, etc. Analysts will use the natural/business keys to get information about a Hub. The primary key of Hub tables is usually derived by a combination of business concept ID, load date, and other metadata information.
 
-Links — Links represent the relationship between Hub entities. It has only the join keys. It is like a Factless Fact table in the dimensional model. No attributes - just join keys.
+**Links** — Links represent the relationship between Hub entities. It has only the join keys. It is like a Factless Fact table in the dimensional model. No attributes - just join keys.
 
-Satellites — Satellite tables have the attributes of the entities in the Hub or Links. They have descriptive information on core business entities. They are similar to a normalized version of a Dimension table. For example, a customer hub can have many satellite tables such as customer geographical attributes, , customer credit score, customer loyalty tiers, etc.
+**Satellites** — Satellite tables have the attributes of the entities in the Hub or Links. They have descriptive information on core business entities. They are similar to a normalized version of a Dimension table. For example, a customer hub can have many satellite tables such as customer geographical attributes, , customer credit score, customer loyalty tiers, etc.
 
 Source: Prescriptive Guidance for Implementing a Data Vault Model on the Databricks Lakehouse Platform (https://www.databricks.com/blog/2022/06/24/prescriptive-guidance-for-implementing-a-data-vault-model-on-the-databricks-lakehouse-platform.html)
 
